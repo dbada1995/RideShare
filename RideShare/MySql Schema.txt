@@ -1,0 +1,31 @@
+use Carpool_db;
+
+Create table ridetransactions
+(
+postedBy varchar(20),
+requestedBy varchar(20),
+status varchar(20),
+rid int(11)
+);
+
+create table rides(
+userName varchar(20) not null,
+source  varchar(40),
+destination varchar(40),
+dot varchar(40) not null,
+timeot varchar(40) not null,
+seats int(11) not null,
+message varchar(30) not null,
+charge varchar(30) not null,
+meetingPoint varchar(30),
+droppingPoint varchar(30)
+);
+
+Create table users
+(
+userName varchar(40) primary key,
+password varchar(40) not null,
+phone varchar(40) not null,
+email varchar(40) not null,
+gender varchar(30) not null
+);
